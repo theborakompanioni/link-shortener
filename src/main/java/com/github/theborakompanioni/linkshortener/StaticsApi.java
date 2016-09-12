@@ -6,7 +6,6 @@ import io.vertx.rxjava.ext.web.handler.StaticHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.stereotype.Component;
 
 @Slf4j
 class StaticsApi {

@@ -83,7 +83,6 @@ class LinkShortenerApi {
         return router;
     }
 
-
     static class LinkIdCodec {
         static Optional<Long> decode(String param) {
             try {
@@ -101,6 +100,4 @@ class LinkShortenerApi {
             return Base64.getUrlEncoder().encodeToString(String.valueOf(id).getBytes(Charsets.UTF_8));
         }
     }
-
-
 }

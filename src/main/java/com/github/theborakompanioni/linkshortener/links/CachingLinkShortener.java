@@ -8,11 +8,10 @@ import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
 public class CachingLinkShortener implements LinkShortener {
+    private final LinkShortener delegate;
     private Cache<Long, String> cache = CacheBuilder.newBuilder()
             .expireAfterAccess(1, TimeUnit.HOURS)
             .build();
-
-    private final LinkShortener delegate;
 
     public CachingLinkShortener(LinkShortener delegate) {
         this.delegate = delegate;
