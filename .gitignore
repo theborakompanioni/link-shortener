@@ -1,0 +1,7 @@
+*.iml
+.idea
+
+.vertx
+
+target/
+pom.xml.versionsBackup
